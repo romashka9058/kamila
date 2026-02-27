@@ -8,7 +8,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html, body { height: 100%; overflow: hidden; }
     body { 
-        font-family: impact; 
+        font-family: fantasy; 
         display: flex; 
         justify-content: center; 
         align-items: center; 
@@ -17,33 +17,40 @@
     
     .scaling-wrapper {
         width: min(100vmin, 50rem); 
-        height: min(100vmin, 100vh);
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2vmin;
+        
     }
     
     .q {
         text-align: center;
-        width: 100%;
         flex-direction: column;
-        gap: 1vmin;
+        display: flex;
+        margin-bottom: 5vmin;
+    }
+
+    img {
+        width: 100%;
+        height: 98%;
     }
     
     h1 { 
         font-size: min(19vmin, 9rem); 
-        letter-spacing: -0.075em;
+        letter-spacing: -0.15em;
+        font-weight: 900;
     }
     
     h2 { 
         font-size: min(7vmin, 3.5rem); 
         margin-bottom: 1vmin;
+        font-weight: 600;
     }
     
-    .photo-container img {
-        width: min(60vmin, 30rem);
-        margin: min(-2vmin, -1rem) auto -1.5vmin;
+    .photo-container {
+        width: 55vmin;
+        margin: -3vmin auto -1.5vmin;
+        height: 53vmin;
     }
     
     .info { 
@@ -63,8 +70,8 @@
     
     .warning {
         font-size: min(2.5vmin, 1.5rem);
-        line-height: 0.9;
-        letter-spacing: min(.1vmin);
+        line-height: 0.85;
+        letter-spacing: min(.15vmin);
     }
   </style>
 </head>
@@ -87,7 +94,7 @@
         <p>Brown Eyes</p>
       </div>
       <div class="ls"><p>Last seen: Zubovo</p></div>
-      <div class="warning">IF YOU HAVE ANY INFORMATION REGARDING THIS MISSING MOTHERTRUCKER, PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</div>
+      <h2 class="warning">IF YOU HAVE ANY INFORMATION REGARDING THIS MISSING MOTHERTRUCKER, PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</h2>
     </div>
   </div>
 </body>
