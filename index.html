@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GDE DURA</title>
   <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * { margin: 0; padding: 0; box-sizing: border-box;}
     html, body { height: 100%; overflow: hidden; }
     body { 
         font-family: impact; 
@@ -16,65 +16,67 @@
     }
     
     .scaling-wrapper {
-        width: min(80vmin, 50rem); 
+        width: 85vmin;
         display: flex;
-        justify-content: center;
-        align-items: center;}
+        justify-content: center;}
     .q {
         text-align: center;
         flex-direction: column;
         display: flex;
-        margin-bottom: 5vmin;
     }
 
 
     img {
         width: 100%;
-        height: 98%;}
+        height: auto;}
     .photo-container {
-        width: min(70vmin, 40rem);
-        margin: -4vmin auto -2.5vmin;
-        height: min(75vmin, 45rem);
+        width: min(45vmin, 30rem);
+        margin: -3vmin auto -1.5vmin;
     }
     
 
     h1 { 
-        font-size: min(20vmin, 11rem); 
-        letter-spacing: -0.05em;
-        font-weight: 900;}
+        font-size: min(20vmin, 12rem); 
+        letter-spacing: -0.05em;}
     h2 { 
-        font-size: min(8vmin, 4.5rem); 
-        margin-bottom: 1vmin;
+        font-size: min(8vmin, 4rem); 
+        margin-bottom: 2vmin;
         font-weight: 500;
     }
 
     
     .info { 
         display: flex; 
-        gap: 3vmin;
+        gap: 2.5vmin;
         justify-content: center;
     }
+    e {
+        color: #fff
+    }
+    
     
     .info p, .ls p {
-        font-size: min(4vmin, 1.75rem);
+        font-size: min(4vmin, 1.5rem);
         font-family: arial;
-        line-height: 0.9;
-        letter-spacing: min(.2vmin);
-    } .ls p { margin: 2vmin 0; }
+        line-height: 1;
+        letter-spacing: min(.1vmin);
+    } 
+    .ls p { margin: 4vmin 0; }
     
     .warning {
-        font-size: min(2.5vmin, 1.5rem);
-        line-height: 0.85;
-        letter-spacing: min(.15vmin);
+        font-size: min(3.5vmin, 1.5rem);
+        line-height: .9;
+        letter-spacing: min(.1vmin);
+        align-self: center;
     }
   </style>
 </head>
 <body>
   <div class="scaling-wrapper">
     <div class="q">
-      <h1>GDE DURA</h1>
+      <h1>GDE DURA?</h1>
       <div class="photo-container"><img src="photo.png"></div>
-      <h2>KHAMATSHINA CAMILA</h2>
+      <h2>ISEMETOVA KAMILA</h2>
       <div class="info">
         <p>female</p>
         <p>DOB 4/3/11</p>
@@ -88,7 +90,7 @@
         <p>Brown Eyes</p>
       </div>
       <div class="ls"><p>Last seen: Zubovo</p></div>
-      <h2 class="warning">IF YOU HAVE ANY INFORMATION REGARDING THIS MISSING MOTHERTRUCKER, PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</h2>
+      <h2 class="warning">IF YOU HAVE ANY INFORMATION<br>REGARDING THIS MISSING MOTHERTRUCKER,<br> PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</h2>
     </div>
   </div>
 </body>
