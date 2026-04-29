@@ -20,26 +20,26 @@
         width: 100%;
     }
     .photo-container {
-        width: 42dvw;
-        margin: -1dvw auto;
+        width: min(42dvw, 26.2rem);
+        margin: max(-1dvw, -0.6rem) auto;
         display: flex;
     }
     
 
     h1 { 
-        font-size: 15dvw; 
-        letter-spacing: -1dvw;
+        font-size: min(15dvw, 9.4rem); 
+        letter-spacing: max(-1dvw, -0.4rem);
         font-weight: 900;
     }
     h2 { 
-        font-size: 8dvw; 
+        font-size: min(8dvw, 4.9rem); 
         font-weight: 900;
     }
 
     
     .info { 
         display: flex; 
-        gap: 2.5dvw;
+        gap: min(2.5dvw, 1.5rem);
         justify-content: center;
     }
     e {
@@ -47,17 +47,16 @@
     }
     
     .info p, .ls p {
-        font-size: 3.5dvw;
+        font-size: min(3.5dvw, 2.1rem);
         font-family: arial;
         line-height: 1;
         letter-spacing: min(.15dvw);
     } 
-    .ls p { margin: 2dvw 0; }
+    .ls p { margin: min(2dvw, 1.2rem) 0; }
     
     .warning {
-        font-size: 2.5dvw;
+        font-size: min(2.5dvw, 1.5rem);
         line-height: 0.8;
-        align-self: center;
         font-family: arial;
         letter-spacing: -0.1dvw;
         transform: scaleX(1.1);
