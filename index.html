@@ -9,76 +9,63 @@
     html, body { height: 100%; overflow: hidden; }
     body { 
         font-family: impact; 
-        display: flex; 
-        justify-content: center; 
-        align-items: center; 
         background: white; 
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
     
-    .scaling-wrapper {
-        width: 85vmin;
-        display: flex;
-        justify-content: center;}
-    .q {
-        text-align: center;
-        flex-direction: column;
-        display: flex;
-    }
-
-
     img {
         width: 100%;
-        height: auto;}
+    }
     .photo-container {
-        width: min(36vmin, 28rem);
-        margin: -2vmin auto -1vmin;
+        width: 42dvw;
+        margin: -1dvw auto;
+        display: flex;
     }
     
 
     h1 { 
-        font-size: min(16vmin, 9rem); 
-        letter-spacing: -1vmin;
+        font-size: 15dvw; 
+        letter-spacing: -1dvw;
         font-weight: 900;
-        transform: scaleY(1.2);
-}
+    }
     h2 { 
-        font-size: min(7vmin, 4rem); 
-        margin-bottom: 1vmin;
+        font-size: 8dvw; 
         font-weight: 900;
     }
 
     
     .info { 
         display: flex; 
-        gap: 2.5vmin;
+        gap: 2.5dvw;
         justify-content: center;
     }
     e {
         color: #fff
     }
     
-    
     .info p, .ls p {
-        font-size: min(3vmin, 1.7rem);
+        font-size: 3.5dvw;
         font-family: arial;
         line-height: 1;
-        letter-spacing: min(.1vmin);
+        letter-spacing: min(.15dvw);
     } 
-    .ls p { margin: 2vmin 0; }
+    .ls p { margin: 2dvw 0; }
     
     .warning {
-        font-size: min(3vmin, 1.5rem);
+        font-size: 2.5dvw;
         line-height: 0.8;
         align-self: center;
         font-family: arial;
-        letter-spacing: -0.1vmin;
+        letter-spacing: -0.1dvw;
         transform: scaleX(1.1);
     }
   </style>
 </head>
 <body>
   <div class="scaling-wrapper">
-    <div class="q">
       <h1>GDE<e>-</e>DURA?</h1>
       <div class="photo-container"><img src="photo.png"></div>
       <h2>ISEMETOVA KAMILA</h2>
@@ -96,7 +83,6 @@
       </div>
       <div class="ls"><p>Last seen: Zubovo</p></div>
       <h2 class="warning">IF YOU HAVE ANY INFORMATION<br>REGARDING THIS MISSING MOTHERTRUCKER,<br> PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</h2>
-    </div>
   </div>
 </body>
 </html>
