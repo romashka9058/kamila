@@ -1,87 +1,61 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GDE DURA</title>
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box;}
-    html, body { height: 100%; overflow: hidden; }
-    body { 
-        font-family: impact; 
-        background: white; 
-        text-align: center;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    img {
-        width: 100%;
-    }
-    .photo-container {
-        width: min(42dvw, 26.2rem);
-        margin: max(-1dvw, -0.6rem) auto;
-        display: flex;
-    }
-    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GDE DURA</title>
+        <style>
+            ::selection { background-color: #0000; }
+            ::-moz-selection { background-color: #0000; }
+            ::-webkit-scrollbar {width: 0; height: 0;}
+                        
+            :root {
+                --рут: 1;
+                    --макс: max(var(--общее), var(--рут));
+                        --общее: calc((var(--ширина) + var(--текст)) / 2);
+                    --ширина: 1;
+                    --текст: 1;
+            }
 
-    h1 { 
-        font-size: min(15dvw, 9.4rem); 
-        letter-spacing: max(-1dvw, -0.4rem);
-        font-weight: 900;
-    }
-    h2 { 
-        font-size: min(8dvw, 4.9rem); 
-        font-weight: 900;
-    }
+            body {
+                overflow-x: hidden;
+                min-height: 100vh;
+                width: 100vw;
+            } 
+                    
+            * {
+                -ms-overflow-style: none;
+                margin: 0;
+                box-sizing: border-box;
+                scroll-behavior: smooth;
+                transition: all .1s;
+                scrollbar-width: none;
+                border: none;
+                background: none;
+                overscroll-behavior: none;
+            }
 
-    
-    .info { 
-        display: flex; 
-        gap: min(2.5dvw, 1.5rem);
-        justify-content: center;
-    }
-    e {
-        color: #fff
-    }
-    
-    .info p, .ls p {
-        font-size: min(3.5dvw, 2.1rem);
-        font-family: arial;
-        line-height: 1;
-        letter-spacing: min(.15dvw);
-    } 
-    .ls p { margin: min(2dvw, 1.2rem) 0; }
-    
-    .warning {
-        font-size: min(2.5dvw, 1.5rem);
-        line-height: 0.8;
-        font-family: arial;
-        letter-spacing: -0.1dvw;
-        transform: scaleX(1.1);
-    }
-  </style>
-</head>
-<body>
-  <div class="scaling-wrapper">
-      <h1>GDE<e>-</e>DURA?</h1>
-      <div class="photo-container"><img src="photo.png"></div>
-      <h2>ISEMETOVA KAMILA</h2>
-      <div class="info">
-        <p>female</p>
-        <p>DOB 4/3/11</p>
-      </div>
-      <div class="info">
-        <p>Height: 160 s huem</p>
-        <p>Weight: ya ne znayu</p>
-      </div>
-      <div class="info">
-        <p>Byed hair</p>
-        <p>Brown Eyes</p>
-      </div>
-      <div class="ls"><p>Last seen: Zubovo</p></div>
-      <h2 class="warning">IF YOU HAVE ANY INFORMATION<br>REGARDING THIS MISSING MOTHERTRUCKER,<br> PLEASE CALL YOUR LOCAL POLICE DEPARTMENT</h2>
-  </div>
-</body>
+
+                    
+            body {
+                background: white;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+       
+            img {
+                object-fit: scale-down;
+                width: 100vw;
+                max-height: 80vh;
+            }
+        </style>
+    </head>
+
+
+    <body>
+        <img src="oa.png">
+    </body>
+
 </html>
